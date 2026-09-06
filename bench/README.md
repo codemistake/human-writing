@@ -45,14 +45,14 @@ python bench/judge.py report        # после записи bench/judge/verdic
 
 Те же 20 входов, та же модель (Sonnet), тот же судья (Opus) и тот же протокол: каждый скилл сравнивается с baseline попарно вслепую. Скиллы взяты с GitHub по запросу «humanizer-ru», отсортированы по звёздам; снимки `SKILL.md` с SHA коммита лежат в [competitors/](./competitors/). Применялись только текстовые правила, скрипты (сканеры, линтеры) не запускались. Baseline один и тот же, но потери и выдумки у него в каждой паре считает свой судья, поэтому его числа гуляют от 1 до 5.
 
-| Скилл | ★ | Слов в SKILL.md | Судья: скилл / baseline / ничья | Фактов потеряно | Фактов выдумано |
-|---|---|---|---|---|---|
-| **human-writing v1.1.0** (этот репозиторий) | — | 1 700 | **8 / 6 / 6** | **0** | **1** |
-| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) | 123 | 2 000 | 6 / 11 / 3 | 8 | 1 |
-| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) | 287 | 4 560 | 5 / 11 / 4 | 8 | **10** |
-| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) | 149 | 2 410 | 5 / 13 / 2 | 5 | 4 |
-| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) | 37 | 1 830 | 3 / 15 / 2 | **12** | 3 |
-| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) | 15 | 1 570 | 3 / 12 / 5 | 4 | 0 |
+| Скилл | ★ | Слов в SKILL.md | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Итог |
+|---|---|---|---|---|---|---|
+| **human-writing v1.1.0** (этот репозиторий) | — | 1 700 | **8 / 6 / 6** | **0** | **1** | помогает, факты целы |
+| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) | 123 | 2 000 | 6 / 11 / 3 | 8 | 1 | мешает, теряет факты |
+| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) | 287 | 4 560 | 5 / 11 / 4 | 8 | **10** | мешает, выдумывает |
+| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) | 149 | 2 410 | 5 / 13 / 2 | 5 | 4 | мешает |
+| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) | 37 | 1 830 | 3 / 15 / 2 | **12** | 3 | мешает, теряет факты |
+| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) | 15 | 1 570 | 3 / 12 / 5 | 4 | 0 | мешает, но честен |
 
 Контрольные тексты (18–20) все шесть скиллов оставили нетронутыми, baseline переписал пункт договора. Плотность канцелярских маркеров у всех около нуля, эта метрика никого не различает.
 
