@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <a href="https://skills.sh/codemistake/human-writing"><img src="https://skills.sh/b/codemistake/human-writing" alt="skills.sh installs"></a>
+  <a href="https://skills.sh/codemistake/human-writing/human-writing"><img src="https://skills.sh/b/codemistake/human-writing" alt="skills.sh installs"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
   <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-informational" alt="Version 1.0.0"></a>
   <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/Agent%20Skills-spec%20compatible-8A2BE2" alt="Agent Skills spec"></a>
