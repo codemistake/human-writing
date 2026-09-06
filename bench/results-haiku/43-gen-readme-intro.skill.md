@@ -1,32 +1,19 @@
-## ratelimit-redis
-
-Ограничение частоты запросов (rate limiting) с состоянием в Redis. Используйте, когда нужно, чтобы лимит был общим для нескольких инстансов приложения. Алгоритм — token bucket.
+ratelimit-redis ограничивает частоту запросов с помощью алгоритма token bucket. Состояние хранится в Redis, так что лимит общий для нескольких инстансов приложения.
 
 Поддерживает asyncio.
-
-### Установка
 
 ```bash
 pip install ratelimit-redis
 ```
 
-### Использование
+Минимальный пример:
 
 ```python
-from ratelimit_redis import RedisRateLimiter
-
 limiter = RedisRateLimiter(redis, key="api:user:42", rate=10, per=60)
-
 if await limiter.allow():
     # обработать запрос
-else:
-    # вернуть 429
 ```
 
-Лимит `rate=10, per=60` означает максимум 10 запросов в 60 секунд.
+MIT License.
 
-### Ограничения
-
-Redis Cluster не поддерживается. Это в планах.
-
-Лицензия: MIT
+Примечание: Redis Cluster не поддерживается, планируется добавить.
