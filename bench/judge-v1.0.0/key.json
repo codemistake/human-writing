@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "02-postmortem": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "04-support": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "07-release-notes": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "09-job-posting": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "10-onboarding": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "13-landing": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "16-status-page": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "skill"
+ }
+}

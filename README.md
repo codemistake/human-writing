@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://skills.sh/codemistake/human-writing/human-writing"><img src="https://skills.sh/b/codemistake/human-writing" alt="skills.sh installs"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.0.0-informational" alt="Version 1.0.0"></a>
+  <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.0-informational" alt="Version 1.1.0"></a>
   <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/Agent%20Skills-spec%20compatible-8A2BE2" alt="Agent Skills spec"></a>
   <img src="https://img.shields.io/badge/lang-RU%20first%20%C2%B7%20EN-success" alt="Russian first, English secondary">
 </p>
@@ -206,6 +206,21 @@ npx skills add codemistake/human-writing --global
 - **Не добавляет искусственные ошибки.** Никаких специальных опечаток, сленга, обрывков предложений и случайных разговорных частиц. Человеческий текст не обязан быть плохим текстом.
 - **Не делает текст «максимально разговорным».** У README, RFC, сообщения в Telegram и ответа на code review разный стиль. Скилл сохраняет подходящий регистр, а не приводит всё к одному голосу.
 - **Не заменяет содержание.** Если модель галлюцинирует факты, writing skill это не исправит. Он отвечает за «как сказать», а не за «правда ли это».
+
+## Бенчмарк
+
+Скилл проверен на 20 русских входах в 17 регистрах плюс 3 контрольных текста, которые трогать нельзя. Та же модель (Claude Sonnet) без скилла и со скиллом, одинаковые запросы, слепая парная оценка судьёй (Claude Opus) и скриптовые метрики. Обход AI-детекторов не измерялся, потому что это не цель.
+
+| v1.1.0 | baseline | skill |
+|---|---|---|
+| Судья предпочёл (из 20 пар, 6 ничьих) | 6 | **8** |
+| Фактов потеряно | 3 | **0** |
+| Фактов выдумано | 4 | **1** |
+| Контрольные тексты изменены | 1 из 3 | **0 из 3** |
+
+Главный вывод не в счёте 8:6, он в пределах шума. Sonnet и без скилла хорошо чистит канцелярит: плотность маркеров падает до нуля в обоих условиях. Скилл добавляет дисциплину: не теряет и не выдумывает факты и не трогает хороший текст, включая пункт договора, который baseline переписал в разговорный синтаксис. Первая версия проигрывала 6:10 за то, что резала содержание вместе с водой; правила v1.1.0 это исправили.
+
+Метод, входы, все тексты и вердикты судьи с комментариями — в [bench/](./bench/).
 
 ## Ограничения
 
