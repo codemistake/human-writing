@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://skills.sh/codemistake/human-writing/human-writing"><img src="https://skills.sh/b/codemistake/human-writing" alt="skills.sh installs"></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-  <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.1.0-informational" alt="Version 1.1.0"></a>
+  <a href="./CHANGELOG.md"><img src="https://img.shields.io/badge/version-1.2.0-informational" alt="Version 1.2.0"></a>
   <a href="https://agentskills.io/specification"><img src="https://img.shields.io/badge/Agent%20Skills-spec%20compatible-8A2BE2" alt="Agent Skills spec"></a>
   <img src="https://img.shields.io/badge/lang-RU%20first%20%C2%B7%20EN-success" alt="Russian first, English secondary">
 </p>
