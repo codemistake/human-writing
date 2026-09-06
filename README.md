@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.svg" alt="human-writing — Russian-first writing skill for AI agents" width="100%">
+  <img src="./assets/header.png" alt="Human Writing — русскоязычный writing skill для AI-агентов" width="100%">
 </p>
 
 <p align="center">
