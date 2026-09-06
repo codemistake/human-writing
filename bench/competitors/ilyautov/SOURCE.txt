@@ -1,0 +1,5 @@
+source: https://github.com/ilyautov/humanizer-ru
+path: skills/humanizer-ru/SKILL.md
+commit: 36f26657d652e7a5a411cdcebcac738fb1528186
+fetched: 2026-09-06
+license: MIT (see LICENSE)

@@ -14,7 +14,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-JD = ROOT / os.environ.get("BENCH_JUDGE_DIR", "judge")  # BENCH_JUDGE_DIR=judge-v1.0.0 для архива
+COND = os.environ.get("BENCH_COND", "skill")  # какое условие сравниваем с baseline
+JD = ROOT / os.environ.get("BENCH_JUDGE_DIR", "judge" if COND == "skill" else f"judge-{COND}")
 PER_FILE = 5
 
 
@@ -25,7 +26,7 @@ def make():
     key, chunks = {}, []
     for inp in inputs:
         outs = {}
-        for c in ("baseline", "skill"):
+        for c in ("baseline", COND):
             p = ROOT / "results" / f"{inp['id']}.{c}.md"
             if not p.exists():
                 break
@@ -33,8 +34,8 @@ def make():
         if len(outs) < 2:
             continue
         a_is_skill = rng.random() < 0.5
-        key[inp["id"]] = {"A": "skill" if a_is_skill else "baseline", "B": "baseline" if a_is_skill else "skill"}
-        a, b = (outs["skill"], outs["baseline"]) if a_is_skill else (outs["baseline"], outs["skill"])
+        key[inp["id"]] = {"A": COND if a_is_skill else "baseline", "B": "baseline" if a_is_skill else COND}
+        a, b = (outs[COND], outs["baseline"]) if a_is_skill else (outs["baseline"], outs[COND])
         chunks.append(
             f"## {inp['id']}\n\n**Регистр:** {inp['register']}\n\n**Запрос пользователя:** {inp['prompt']}\n\n"
             f"**Исходный текст:**\n\n{inp['text']}\n\n**Вариант A:**\n\n{a}\n\n**Вариант B:**\n\n{b}\n"
@@ -51,24 +52,26 @@ def report():
     verdicts = []
     for p in sorted(JD.glob("verdicts-*.json")):
         verdicts += json.loads(p.read_text(encoding="utf-8"))
-    wins = {"skill": 0, "baseline": 0, "tie": 0}
+    wins = {COND: 0, "baseline": 0, "tie": 0}
     rows = []
     for v in verdicts:
         k = key[v["id"]]
         w = "tie" if v["winner"] == "tie" else k[v["winner"]]
         wins[w] += 1
         lost = {k[s]: v.get("facts_lost", {}).get(s, []) for s in ("A", "B")}
+        lost = {("skill" if kk == COND else kk): vv for kk, vv in lost.items()}
         inv = {k[s]: v.get("facts_invented", {}).get(s, []) for s in ("A", "B")}
+        inv = {("skill" if kk == COND else kk): vv for kk, vv in inv.items()}
         rows.append((v["id"], inputs[v["id"]]["register"], w, lost, inv, v.get("why", "")))
-    print("| # | Регистр | Лучше | Потеряно фактов (baseline / skill) | Выдумано (baseline / skill) | Комментарий судьи |")
+    print(f"| # | Регистр | Лучше | Потеряно фактов (baseline / {COND}) | Выдумано (baseline / {COND}) | Комментарий судьи |")
     print("|---|---|---|---|---|---|")
     for i, reg, w, lost, inv, why in rows:
         f = lambda d: f"{len(d['baseline'])} / {len(d['skill'])}"
         print(f"| {i} | {reg} | {w} | {f(lost)} | {f(inv)} | {why} |")
     n = len(rows)
-    print(f"\nИтого (n={n}): skill {wins['skill']}, baseline {wins['baseline']}, ничья {wins['tie']}")
-    for c in ("baseline", "skill"):
-        print(f"{c}: потеряно фактов {sum(len(r[3][c]) for r in rows)}, выдумано {sum(len(r[4][c]) for r in rows)}")
+    print(f"\nИтого (n={n}): {COND} {wins[COND]}, baseline {wins['baseline']}, ничья {wins['tie']}")
+    for c in ("baseline", "skill"):  # в lost/inv условие всегда лежит под ключом "skill"
+        print(f"{COND if c == 'skill' else c}: потеряно фактов {sum(len(r[3][c]) for r in rows)}, выдумано {sum(len(r[4][c]) for r in rows)}")
 
 
 if __name__ == "__main__":

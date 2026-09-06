@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "02-postmortem": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "05-post": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "06-abstract": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "08-business-email": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "09-job-posting": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "10-onboarding": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "12-install-docs": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "13-landing": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "16-status-page": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "20-ctrl-legal": {
+  "A": "thevseprod",
+  "B": "baseline"
+ }
+}

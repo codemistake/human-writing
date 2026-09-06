@@ -1,0 +1,5 @@
+source: https://github.com/Vladimir-Human/humanizer-ru
+path: SKILL.md
+commit: 79509bbf1ca087f72a8db208dfb0698163ecc7a6
+fetched: 2026-09-06
+license: MIT (see LICENSE)

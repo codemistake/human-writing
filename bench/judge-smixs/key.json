@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "02-postmortem": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "09-job-posting": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "10-onboarding": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "12-install-docs": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "13-landing": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "16-status-page": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "20-ctrl-legal": {
+  "A": "smixs",
+  "B": "baseline"
+ }
+}

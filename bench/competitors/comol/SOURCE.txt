@@ -1,0 +1,5 @@
+source: https://github.com/comol/Humanizer_RU
+path: skills/humanizer-ru/SKILL.md
+commit: 19186272a14488843d6d9a02115ced557957ed59
+fetched: 2026-09-06
+license: MIT (see LICENSE)

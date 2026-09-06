@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "02-postmortem": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "07-release-notes": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "09-job-posting": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "12-install-docs": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "13-landing": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "16-status-page": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "17-cover-letter": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "comol"
+ }
+}

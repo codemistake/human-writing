@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "02-postmortem": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "05-post": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "06-abstract": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "07-release-notes": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "09-job-posting": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "10-onboarding": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "13-landing": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "16-status-page": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "20-ctrl-legal": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ }
+}

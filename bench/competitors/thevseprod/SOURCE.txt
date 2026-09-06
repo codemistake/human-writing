@@ -1,0 +1,5 @@
+source: https://github.com/thevseprod/humanizer-ru
+path: SKILL.md
+commit: 9ad38ab51d9eeba3825002fb8f3d7084ad0290ec
+fetched: 2026-09-06
+license: MIT (see LICENSE)

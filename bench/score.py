@@ -17,7 +17,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent
-CONDS = ("baseline", "skill")
+RESULTS = ROOT / os.environ.get("BENCH_RESULTS_DIR", "results")
+CONDS = ("baseline",) + tuple(sorted({f.name.split(".")[1] for f in RESULTS.glob("*.md") if f.name.count(".") == 2} - {"baseline"}))
 
 MARKERS = [
     r"стоит отметить", r"важно отметить", r"следует отметить", r"необходимо отметить",
@@ -59,7 +60,7 @@ def strip_output(s: str) -> str:
 
 
 def score_one(inp: dict, cond: str):
-    p = ROOT / os.environ.get("BENCH_RESULTS_DIR", "results") / f"{inp['id']}.{cond}.md"
+    p = RESULTS / f"{inp['id']}.{cond}.md"
     if not p.exists():
         return None
     out = strip_output(p.read_text(encoding="utf-8"))
@@ -90,30 +91,27 @@ def main():
         print(json.dumps(rows, ensure_ascii=False, indent=1))
         return
 
-    print("| # | Регистр | Маркеров/100 слов: вход → baseline → skill | Факты: baseline / skill | Длина: baseline / skill |")
-    print("|---|---|---|---|---|")
+    conds = " | ".join(CONDS)
+    print(f"| # | Регистр | Маркеров/100 слов: вход → {conds} | Факты: {conds} | Длина: {conds} | sim (контроль): {conds} |")
+    print("|---|---|---|---|---|---|")
     for r in rows:
-        b, s = r["baseline"], r["skill"]
-        if not (b and s):
-            print(f"| {r['id']} | {r['register']} | нет результата | | |")
+        if not all(r.get(c) for c in CONDS):
+            print(f"| {r['id']} | {r['register']} | нет результата | | | |")
             continue
-        extra = f" | sim {b['sim']} / {s['sim']}" if r["control"] else ""
-        print(f"| {r['id']} | {r['register']} | {r['markers_in']} → {b['markers']} → {s['markers']} "
-              f"| {b['anchors']} / {s['anchors']} | {b['len']} / {s['len']}{extra} |")
+        m = " → ".join(str(r[c]["markers"]) for c in CONDS)
+        a = " / ".join(r[c]["anchors"] for c in CONDS)
+        l = " / ".join(str(r[c]["len"]) for c in CONDS)
+        sim = " / ".join(str(r[c]["sim"]) for c in CONDS) if r["control"] else ""
+        print(f"| {r['id']} | {r['register']} | {r['markers_in']} → {m} | {a} | {l} | {sim} |")
 
-    done = [r for r in rows if r["baseline"] and r["skill"]]
+    done = [r for r in rows if all(r.get(c) for c in CONDS)]
     ai = [r for r in done if not r["control"]]
     ctrl = [r for r in done if r["control"]]
-    if ai:
-        avg = lambda key, c: sum(r[c][key] for r in ai) / len(ai)
-        print(f"\nAI-входы (n={len(ai)}): маркеров/100 слов вход {sum(r['markers_in'] for r in ai)/len(ai):.1f}, "
-              f"baseline {avg('markers','baseline'):.1f}, skill {avg('markers','skill'):.1f}; "
-              f"факты сохранены baseline {100*avg('anchors_frac','baseline'):.0f}%, skill {100*avg('anchors_frac','skill'):.0f}%; "
-              f"длина baseline {avg('len','baseline'):.2f}, skill {avg('len','skill'):.2f}")
-    if ctrl:
-        avg = lambda key, c: sum(r[c][key] for r in ctrl) / len(ctrl)
-        print(f"Контроль (n={len(ctrl)}): похожесть на исходник baseline {avg('sim','baseline'):.2f}, skill {avg('sim','skill'):.2f}; "
-              f"факты baseline {100*avg('anchors_frac','baseline'):.0f}%, skill {100*avg('anchors_frac','skill'):.0f}%")
+    avg = lambda rs, key, c: sum(r[c][key] for r in rs) / len(rs)
+    print(f"\n| Условие | Маркеров/100 слов (AI-входы, вход {sum(r['markers_in'] for r in ai)/max(len(ai),1):.1f}) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |")
+    print("|---|---|---|---|---|---|")
+    for c in CONDS:
+        print(f"| {c} | {avg(ai,'markers',c):.1f} | {100*avg(ai,'anchors_frac',c):.0f}% | {avg(ai,'len',c):.2f} | {avg(ctrl,'sim',c):.2f} | {100*avg(ctrl,'anchors_frac',c):.0f}% |")
     lost = [(r["id"], c, r[c]["lost"]) for r in done for c in CONDS if r[c]["lost"]]
     if lost:
         print("\nПотерянные якоря:")
