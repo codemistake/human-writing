@@ -1,0 +1,202 @@
+{
+ "01-newsletter": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "02-postmortem": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "03-readme": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "09-job-posting": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "10-onboarding": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "11-chat-answer": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "13-landing": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "15-jira-task": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "16-status-page": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "18-ctrl-slack": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "21-subtle-blog": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "22-subtle-product-email": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "23-subtle-tech-explainer": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "24-subtle-linkedin": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "25-subtle-onboarding-doc": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "26-subtle-tool-review": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "27-subtle-faq": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "28-subtle-retro": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "29-subtle-adr": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "30-subtle-newsletter-intro": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "31-long-postmortem": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "32-long-docs-page": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "33-long-blog-migration": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "34-long-board-report": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "35-long-rfc": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "36-long-customer-guide": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "37-long-policy": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "38-long-status-update": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "39-gen-chat-tcp": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "40-gen-release-notes": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "41-gen-slack-announce": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "42-gen-support-reply": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "43-gen-readme-intro": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "44-gen-chat-debug": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "45-gen-job-posting": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "46-gen-pr-description": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "47-voice-terse-dev": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "48-voice-formal-manager": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "49-voice-ironic-blogger": {
+  "A": "skill",
+  "B": "baseline"
+ },
+ "50-voice-docs-writer": {
+  "A": "baseline",
+  "B": "skill"
+ }
+}

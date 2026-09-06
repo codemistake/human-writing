@@ -1,43 +1,43 @@
 {
  "01-newsletter": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "02-postmortem": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "03-readme": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "04-support": {
   "A": "baseline",
   "B": "smixs"
  },
  "05-post": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "06-abstract": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "07-release-notes": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "08-business-email": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "09-job-posting": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "10-onboarding": {
   "A": "smixs",
   "B": "baseline"
+ },
+ "06-abstract": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "07-release-notes": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "09-job-posting": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "baseline",
+  "B": "smixs"
  },
  "11-chat-answer": {
   "A": "baseline",
@@ -48,8 +48,8 @@
   "B": "baseline"
  },
  "13-landing": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "14-quarterly-report": {
   "A": "baseline",
@@ -60,12 +60,12 @@
   "B": "smixs"
  },
  "16-status-page": {
-  "A": "smixs",
-  "B": "baseline"
- },
- "17-cover-letter": {
   "A": "baseline",
   "B": "smixs"
+ },
+ "17-cover-letter": {
+  "A": "smixs",
+  "B": "baseline"
  },
  "18-ctrl-slack": {
   "A": "baseline",
@@ -76,6 +76,126 @@
   "B": "baseline"
  },
  "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "21-subtle-blog": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "22-subtle-product-email": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "23-subtle-tech-explainer": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "24-subtle-linkedin": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "25-subtle-onboarding-doc": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "26-subtle-tool-review": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "27-subtle-faq": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "28-subtle-retro": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "29-subtle-adr": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "30-subtle-newsletter-intro": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "31-long-postmortem": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "32-long-docs-page": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "33-long-blog-migration": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "34-long-board-report": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "35-long-rfc": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "36-long-customer-guide": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "37-long-policy": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "38-long-status-update": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "39-gen-chat-tcp": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "40-gen-release-notes": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "41-gen-slack-announce": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "42-gen-support-reply": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "43-gen-readme-intro": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "44-gen-chat-debug": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "45-gen-job-posting": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "46-gen-pr-description": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "47-voice-terse-dev": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "48-voice-formal-manager": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "49-voice-ironic-blogger": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "50-voice-docs-writer": {
   "A": "smixs",
   "B": "baseline"
  }

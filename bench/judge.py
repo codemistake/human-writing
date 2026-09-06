@@ -16,7 +16,8 @@ from pathlib import Path
 ROOT = Path(__file__).parent
 COND = os.environ.get("BENCH_COND", "skill")  # какое условие сравниваем с baseline
 JD = ROOT / os.environ.get("BENCH_JUDGE_DIR", "judge" if COND == "skill" else f"judge-{COND}")
-PER_FILE = 5
+PER_FILE = int(os.environ.get("BENCH_PER_FILE", "5"))
+RESULTS = ROOT / os.environ.get("BENCH_RESULTS_DIR", "results")
 
 
 def make():
@@ -27,7 +28,7 @@ def make():
     for inp in inputs:
         outs = {}
         for c in ("baseline", COND):
-            p = ROOT / "results" / f"{inp['id']}.{c}.md"
+            p = RESULTS / f"{inp['id']}.{c}.md"
             if not p.exists():
                 break
             outs[c] = p.read_text(encoding="utf-8").strip()
@@ -38,7 +39,8 @@ def make():
         a, b = (outs[COND], outs["baseline"]) if a_is_skill else (outs["baseline"], outs[COND])
         chunks.append(
             f"## {inp['id']}\n\n**Регистр:** {inp['register']}\n\n**Запрос пользователя:** {inp['prompt']}\n\n"
-            f"**Исходный текст:**\n\n{inp['text']}\n\n**Вариант A:**\n\n{a}\n\n**Вариант B:**\n\n{b}\n"
+            f"**{'Исходные данные' if inp.get('kind') in ('generate', 'voice') else 'Исходный текст'}:**\n\n{inp['text']}\n\n"
+            f"**Вариант A:**\n\n{a}\n\n**Вариант B:**\n\n{b}\n"
         )
     (JD / "key.json").write_text(json.dumps(key, ensure_ascii=False, indent=1), encoding="utf-8")
     for i in range(0, len(chunks), PER_FILE):
@@ -62,13 +64,24 @@ def report():
         lost = {("skill" if kk == COND else kk): vv for kk, vv in lost.items()}
         inv = {k[s]: v.get("facts_invented", {}).get(s, []) for s in ("A", "B")}
         inv = {("skill" if kk == COND else kk): vv for kk, vv in inv.items()}
-        rows.append((v["id"], inputs[v["id"]]["register"], w, lost, inv, v.get("why", "")))
+        rows.append((v["id"], inputs[v["id"]]["register"], w, lost, inv, v.get("why", ""), inputs[v["id"]].get("kind", "rewrite")))
     print(f"| # | Регистр | Лучше | Потеряно фактов (baseline / {COND}) | Выдумано (baseline / {COND}) | Комментарий судьи |")
     print("|---|---|---|---|---|---|")
-    for i, reg, w, lost, inv, why in rows:
+    for i, reg, w, lost, inv, why, kind in rows:
         f = lambda d: f"{len(d['baseline'])} / {len(d['skill'])}"
-        print(f"| {i} | {reg} | {w} | {f(lost)} | {f(inv)} | {why} |")
+        print(f"| {i} | {reg} ({kind}) | {w} | {f(lost)} | {f(inv)} | {why} |")
     n = len(rows)
+    order = ["rewrite", "subtle", "long", "generate", "voice", "control"]
+    kinds = sorted({r[6] for r in rows}, key=order.index)
+    if len(kinds) > 1:
+        print(f"\n| Тип входов | n | {COND} / baseline / ничья | Потеряно (baseline / {COND}) | Выдумано (baseline / {COND}) |")
+        print("|---|---|---|---|---|")
+        for k in kinds:
+            rs = [r for r in rows if r[6] == k]
+            c = lambda w: sum(1 for r in rs if r[2] == w)
+            print(f"| {k} | {len(rs)} | {c(COND)} / {c('baseline')} / {c('tie')} "
+                  f"| {sum(len(r[3]['baseline']) for r in rs)} / {sum(len(r[3]['skill']) for r in rs)} "
+                  f"| {sum(len(r[4]['baseline']) for r in rs)} / {sum(len(r[4]['skill']) for r in rs)} |")
     print(f"\nИтого (n={n}): {COND} {wins[COND]}, baseline {wins['baseline']}, ничья {wins['tie']}")
     for c in ("baseline", "skill"):  # в lost/inv условие всегда лежит под ключом "skill"
         print(f"{COND if c == 'skill' else c}: потеряно фактов {sum(len(r[3][c]) for r in rows)}, выдумано {sum(len(r[4][c]) for r in rows)}")

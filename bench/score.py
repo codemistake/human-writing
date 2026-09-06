@@ -104,15 +104,15 @@ def main():
         sim = " / ".join(str(r[c]["sim"]) for c in CONDS) if r["control"] else ""
         print(f"| {r['id']} | {r['register']} | {r['markers_in']} → {m} | {a} | {l} | {sim} |")
 
-    done = [r for r in rows if all(r.get(c) for c in CONDS)]
-    ai = [r for r in done if not r["control"]]
-    ctrl = [r for r in done if r["control"]]
-    avg = lambda rs, key, c: sum(r[c][key] for r in rs) / len(rs)
-    print(f"\n| Условие | Маркеров/100 слов (AI-входы, вход {sum(r['markers_in'] for r in ai)/max(len(ai),1):.1f}) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |")
-    print("|---|---|---|---|---|---|")
-    for c in CONDS:
-        print(f"| {c} | {avg(ai,'markers',c):.1f} | {100*avg(ai,'anchors_frac',c):.0f}% | {avg(ai,'len',c):.2f} | {avg(ctrl,'sim',c):.2f} | {100*avg(ctrl,'anchors_frac',c):.0f}% |")
-    lost = [(r["id"], c, r[c]["lost"]) for r in done for c in CONDS if r[c]["lost"]]
+    avg = lambda rs, key, c: sum(r[c][key] for r in rs) / max(len(rs), 1)
+    print("\n| Условие | n | Маркеров/100 слов (AI-входы; во входе) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |")
+    print("|---|---|---|---|---|---|---|")
+    for c in CONDS:  # усреднение по входам, где это условие есть: покрытие у условий разное
+        have = [r for r in rows if r.get(c)]
+        ai = [r for r in have if not r["control"]]
+        ctrl = [r for r in have if r["control"]]
+        print(f"| {c} | {len(have)} | {avg(ai,'markers',c):.1f} (во входе {sum(r['markers_in'] for r in ai)/max(len(ai),1):.1f}) | {100*avg(ai,'anchors_frac',c):.0f}% | {avg(ai,'len',c):.2f} | {avg(ctrl,'sim',c):.2f} | {100*avg(ctrl,'anchors_frac',c):.0f}% |")
+    lost = [(r["id"], c, r[c]["lost"]) for r in rows for c in CONDS if r.get(c) and r[c]["lost"]]
     if lost:
         print("\nПотерянные якоря:")
         for i, c, l in lost:

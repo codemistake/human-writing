@@ -1,0 +1,82 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "02-postmortem": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "08-business-email": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "09-job-posting": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "13-landing": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "16-status-page": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "20-ctrl-legal": {
+  "A": "ilyautov",
+  "B": "baseline"
+ }
+}

@@ -4,20 +4,20 @@
   "B": "ilyautov"
  },
  "02-postmortem": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "03-readme": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "04-support": {
   "A": "baseline",
   "B": "ilyautov"
  },
  "05-post": {
-  "A": "baseline",
-  "B": "ilyautov"
+  "A": "ilyautov",
+  "B": "baseline"
  },
  "06-abstract": {
   "A": "baseline",
@@ -28,16 +28,16 @@
   "B": "ilyautov"
  },
  "08-business-email": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "09-job-posting": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "10-onboarding": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "11-chat-answer": {
   "A": "baseline",
@@ -56,26 +56,146 @@
   "B": "baseline"
  },
  "15-jira-task": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "16-status-page": {
   "A": "baseline",
   "B": "ilyautov"
  },
- "16-status-page": {
-  "A": "ilyautov",
-  "B": "baseline"
- },
  "17-cover-letter": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "18-ctrl-slack": {
-  "A": "ilyautov",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "ilyautov"
  },
  "19-ctrl-tech-answer": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "20-ctrl-legal": {
   "A": "ilyautov",
   "B": "baseline"
  },
- "20-ctrl-legal": {
+ "21-subtle-blog": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "22-subtle-product-email": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "23-subtle-tech-explainer": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "24-subtle-linkedin": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "25-subtle-onboarding-doc": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "26-subtle-tool-review": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "27-subtle-faq": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "28-subtle-retro": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "29-subtle-adr": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "30-subtle-newsletter-intro": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "31-long-postmortem": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "32-long-docs-page": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "33-long-blog-migration": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "34-long-board-report": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "35-long-rfc": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "36-long-customer-guide": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "37-long-policy": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "38-long-status-update": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "39-gen-chat-tcp": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "40-gen-release-notes": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "41-gen-slack-announce": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "42-gen-support-reply": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "43-gen-readme-intro": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "44-gen-chat-debug": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "45-gen-job-posting": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "46-gen-pr-description": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "47-voice-terse-dev": {
+  "A": "baseline",
+  "B": "ilyautov"
+ },
+ "48-voice-formal-manager": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "49-voice-ironic-blogger": {
+  "A": "ilyautov",
+  "B": "baseline"
+ },
+ "50-voice-docs-writer": {
   "A": "ilyautov",
   "B": "baseline"
  }

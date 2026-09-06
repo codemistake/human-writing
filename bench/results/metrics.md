@@ -20,19 +20,77 @@
 | 18-ctrl-slack | КОНТРОЛЬ: хорошее сообщение в чате | 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 | 5/5 / 5/5 / 5/5 / 5/5 / 5/5 / 5/5 / 5/5 | 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 | 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 |
 | 19-ctrl-tech-answer | КОНТРОЛЬ: хороший короткий технический ответ | 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 | 3/3 / 3/3 / 3/3 / 3/3 / 3/3 / 3/3 / 3/3 | 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 | 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 |
 | 20-ctrl-legal | КОНТРОЛЬ: пункт договора | 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 → 0.0 | 4/4 / 4/4 / 4/4 / 4/4 / 4/4 / 4/4 / 4/4 | 0.95 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 | 0.92 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 / 1.0 |
+| 21-subtle-blog | Пост в блоге компании | нет результата | | | |
+| 22-subtle-product-email | Письмо пользователям об обновлении | нет результата | | | |
+| 23-subtle-tech-explainer | Объяснение термина в базе знаний | нет результата | | | |
+| 24-subtle-linkedin | Пост в LinkedIn | нет результата | | | |
+| 25-subtle-onboarding-doc | Внутренняя документация для новичков | нет результата | | | |
+| 26-subtle-tool-review | Обзор инструмента для внутреннего wiki | нет результата | | | |
+| 27-subtle-faq | Ответ в FAQ для клиентов | нет результата | | | |
+| 28-subtle-retro | Итоги ретроспективы спринта | нет результата | | | |
+| 29-subtle-adr | Architecture Decision Record | нет результата | | | |
+| 30-subtle-newsletter-intro | Вступление к авторской рассылке | нет результата | | | |
+| 31-long-postmortem | Постмортем на страницу | нет результата | | | |
+| 32-long-docs-page | Страница документации: концепция и настройка | нет результата | | | |
+| 33-long-blog-migration | Инженерная статья в блог | нет результата | | | |
+| 34-long-board-report | Квартальный отчёт для совета директоров | нет результата | | | |
+| 35-long-rfc | RFC / проектное предложение | нет результата | | | |
+| 36-long-customer-guide | Руководство для клиентов: настройка 2FA | нет результата | | | |
+| 37-long-policy | Внутренняя политика: правила дежурств | нет результата | | | |
+| 38-long-status-update | Статус проекта для заказчика | нет результата | | | |
+| 39-gen-chat-tcp | Ответ в рабочем чате на вопрос коллеги | нет результата | | | |
+| 40-gen-release-notes | Release notes из списка изменений | нет результата | | | |
+| 41-gen-slack-announce | Объявление в общий канал команды | нет результата | | | |
+| 42-gen-support-reply | Ответ клиенту на жалобу | нет результата | | | |
+| 43-gen-readme-intro | Вводная часть README | нет результата | | | |
+| 44-gen-chat-debug | Ответ в чате на вопрос с логами | нет результата | | | |
+| 45-gen-job-posting | Описание вакансии из фактов | нет результата | | | |
+| 46-gen-pr-description | Описание pull request | нет результата | | | |
+| 47-voice-terse-dev | Объявление в стиле автора (лаконичный разработчик) | нет результата | | | |
+| 48-voice-formal-manager | Письмо клиенту в стиле автора (сдержанный менеджер) | нет результата | | | |
+| 49-voice-ironic-blogger | Пост в стиле автора (ироничный блогер) | нет результата | | | |
+| 50-voice-docs-writer | Раздел документации в стиле автора (техписатель) | нет результата | | | |
 
-| Условие | Маркеров/100 слов (AI-входы, вход 7.2) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |
-|---|---|---|---|---|---|
-| baseline | 0.0 | 99% | 0.50 | 0.97 | 100% |
-| comol | 0.0 | 100% | 0.49 | 1.00 | 100% |
-| ilyautov | 0.0 | 99% | 0.49 | 1.00 | 100% |
-| skill | 0.0 | 100% | 0.50 | 1.00 | 100% |
-| smixs | 0.0 | 99% | 0.47 | 1.00 | 100% |
-| thevseprod | 0.0 | 99% | 0.46 | 1.00 | 100% |
-| vladimir-human | 0.1 | 100% | 0.44 | 1.00 | 100% |
+| Условие | n | Маркеров/100 слов (AI-входы; во входе) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |
+|---|---|---|---|---|---|---|
+| baseline | 50 | 0.0 (во входе 3.2) | 97% | 0.75 | 0.97 | 100% |
+| comol | 20 | 0.0 (во входе 7.2) | 100% | 0.49 | 1.00 | 100% |
+| ilyautov | 50 | 0.0 (во входе 3.2) | 97% | 0.77 | 1.00 | 100% |
+| skill | 50 | 0.0 (во входе 3.2) | 98% | 0.71 | 1.00 | 100% |
+| smixs | 50 | 0.0 (во входе 3.2) | 97% | 0.72 | 1.00 | 100% |
+| thevseprod | 20 | 0.0 (во входе 7.2) | 99% | 0.46 | 1.00 | 100% |
+| vladimir-human | 20 | 0.1 (во входе 7.2) | 100% | 0.44 | 1.00 | 100% |
 
 Потерянные якоря:
   10-onboarding [smixs]: Настройки
   10-onboarding [thevseprod]: Настройки
   11-chat-answer [baseline]: rebase
   17-cover-letter [ilyautov]: 4 года
+  24-subtle-linkedin [baseline]: две
+  26-subtle-tool-review [baseline]: дорог
+  26-subtle-tool-review [ilyautov]: дорог
+  26-subtle-tool-review [skill]: дорог
+  26-subtle-tool-review [smixs]: дорог
+  28-subtle-retro [baseline]: среда
+  28-subtle-retro [ilyautov]: среда
+  28-subtle-retro [skill]: среда
+  28-subtle-retro [smixs]: среда
+  31-long-postmortem [ilyautov]: 7 дней
+  40-gen-release-notes [baseline]: Python 3.9, Python 3.10
+  40-gen-release-notes [ilyautov]: Python 3.9, Python 3.10
+  40-gen-release-notes [skill]: Python 3.9, Python 3.10
+  40-gen-release-notes [smixs]: Python 3.9, Python 3.10
+  41-gen-slack-announce [baseline]: PostgreSQL 16
+  41-gen-slack-announce [ilyautov]: PostgreSQL 16
+  41-gen-slack-announce [skill]: PostgreSQL 16
+  41-gen-slack-announce [smixs]: PostgreSQL 16
+  42-gen-support-reply [baseline]: неделю
+  42-gen-support-reply [ilyautov]: неделю
+  42-gen-support-reply [skill]: неделю
+  42-gen-support-reply [smixs]: неделю
+  45-gen-job-posting [ilyautov]: четыре
+  46-gen-pr-description [smixs]: 1 200
+  50-voice-docs-writer [baseline]: asynchron
+  50-voice-docs-writer [ilyautov]: asynchron
+  50-voice-docs-writer [skill]: asynchron
+  50-voice-docs-writer [smixs]: asynchron
