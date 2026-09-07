@@ -1,0 +1,202 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "02-postmortem": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "03-readme": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "06-abstract": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "07-release-notes": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "09-job-posting": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "13-landing": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "16-status-page": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "21-subtle-blog": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "22-subtle-product-email": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "23-subtle-tech-explainer": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "24-subtle-linkedin": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "25-subtle-onboarding-doc": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "26-subtle-tool-review": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "27-subtle-faq": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "28-subtle-retro": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "29-subtle-adr": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "30-subtle-newsletter-intro": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "31-long-postmortem": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "32-long-docs-page": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "33-long-blog-migration": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "34-long-board-report": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "35-long-rfc": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "36-long-customer-guide": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "37-long-policy": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "38-long-status-update": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "39-gen-chat-tcp": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "40-gen-release-notes": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "41-gen-slack-announce": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "42-gen-support-reply": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "43-gen-readme-intro": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "44-gen-chat-debug": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "45-gen-job-posting": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "46-gen-pr-description": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "47-voice-terse-dev": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "48-voice-formal-manager": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "49-voice-ironic-blogger": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "50-voice-docs-writer": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ }
+}

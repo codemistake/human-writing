@@ -18,7 +18,7 @@
 ## Не выпущено
 
 - `bench/`: набор расширен с 20 до 50 входов (тонкие LLM-паттерны, длинные документы, написание по данным, голос автора). Прогон на Sonnet и Haiku. Наш скилл на Sonnet: 26:15, потеряно 6 фактов против 25 у baseline. Слабые места: длинные тексты и голос автора.
-- `bench/`: сравнение с пятью русскими humanizer-скиллами с GitHub тем же протоколом (Vladimir-Human, ilyautov, smixs, thevseprod, comol); ilyautov и smixs — на всех 50 входах. Снимки их `SKILL.md` в `bench/competitors/`. Скилл не менялся.
+- `bench/`: сравнение с пятью русскими humanizer-скиллами с GitHub тем же протоколом (Vladimir-Human, ilyautov, smixs, thevseprod, comol) — все пять на полных 50 входах. Снимки их `SKILL.md` в `bench/competitors/`. Ни один не обыграл baseline; лучший из них — Vladimir-Human 20 / 24 / 6. Скилл не менялся.
 
 ## 1.1.0 — 2026-09-06
 

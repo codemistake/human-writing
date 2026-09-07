@@ -1,0 +1,202 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "02-postmortem": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "03-readme": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "06-abstract": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "07-release-notes": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "08-business-email": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "09-job-posting": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "13-landing": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "14-quarterly-report": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "16-status-page": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "18-ctrl-slack": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "19-ctrl-tech-answer": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "20-ctrl-legal": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "21-subtle-blog": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "22-subtle-product-email": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "23-subtle-tech-explainer": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "24-subtle-linkedin": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "25-subtle-onboarding-doc": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "26-subtle-tool-review": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "27-subtle-faq": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "28-subtle-retro": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "29-subtle-adr": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "30-subtle-newsletter-intro": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "31-long-postmortem": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "32-long-docs-page": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "33-long-blog-migration": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "34-long-board-report": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "35-long-rfc": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "36-long-customer-guide": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "37-long-policy": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "38-long-status-update": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "39-gen-chat-tcp": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "40-gen-release-notes": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "41-gen-slack-announce": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "42-gen-support-reply": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "43-gen-readme-intro": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "44-gen-chat-debug": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "45-gen-job-posting": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "46-gen-pr-description": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "47-voice-terse-dev": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "48-voice-formal-manager": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "49-voice-ironic-blogger": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "50-voice-docs-writer": {
+  "A": "thevseprod",
+  "B": "baseline"
+ }
+}
