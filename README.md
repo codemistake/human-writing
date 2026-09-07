@@ -226,12 +226,15 @@ npx skills add codemistake/human-writing --global
 
 | Скилл, 50 входов, Claude Sonnet 5 | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Токенов: описание всегда / тело при вызове |
 |---|---|---|---|---|
+| **Без скилла** — Claude Sonnet 5 как есть | точка отсчёта | 18 в среднем (12–26) | 11 в среднем (6–17) | 0 / 0 |
 | [**human-writing v1.2.0**](https://github.com/codemistake/human-writing) ![★](https://img.shields.io/github/stars/codemistake/human-writing?style=flat-square&label=%E2%98%85&color=555) | **26 / 16 / 8** | 17 (из них 9 искажений) | **1** | **140 / 5 700** |
 | [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) ![★](https://img.shields.io/github/stars/Vladimir-Human/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 20 / 24 / 6 | 21 | 10 | 290 / 6 200 |
 | [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) ![★](https://img.shields.io/github/stars/comol/Humanizer_RU?style=flat-square&label=%E2%98%85&color=555) | 20 / 23 / 7 | 12 (из них 5 искажений) | **1** | 150 / 4 400 |
 | [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) ![★](https://img.shields.io/github/stars/ilyautov/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 16 / 28 / 6 | 17 | **21** | 240 / 13 000 |
 | [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) ![★](https://img.shields.io/github/stars/thevseprod/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 13 / 33 / 4 | 12 | **21** | 85 / 4 400 |
 | [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) ![★](https://img.shields.io/github/stars/smixs/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 12 / 31 / 7 | 19 | 18 | 340 / 6 500 |
+
+Первая строка — базовая модель без правил, то есть то, что получает пользователь без всякого humanizer. Счёта побед у неё нет, она точка отсчёта, но факты она теряет: 18 на 50 текстов в среднем, разброс 12–26 по шести прогонам одного и того же набора разными судьями.
 
 Пока скилл просто установлен, он стоит только своего описания: у нашего это около 140 токенов на каждый запрос. Тело грузится при срабатывании и живёт в контексте до конца сессии. Оценка по токенизатору `o200k_base` с поправкой на Claude, подробности — в [bench/](./bench/).
 
