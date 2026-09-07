@@ -1,4 +1,4 @@
-Для работы нужен Docker.
+Требуется Docker.
 
 1. Скопируйте `.env.example` в `.env` и укажите `DATABASE_URL`.
 2. Запустите сервисы: `docker compose up -d`.

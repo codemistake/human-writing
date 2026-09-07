@@ -1,1 +1,0 @@
-Panic из-за записи в nil map. Ты объявил `var m map[string]int`, но не инициализировал. Добавь `m = make(map[string]int)` перед первой записью, или сразу `m := map[string]int{}`.
