@@ -72,6 +72,8 @@ def score_one(inp: dict, cond: str):
         "anchors_frac": len(kept) / len(inp["anchors"]),
         "lost": [a for a in inp["anchors"] if a not in kept],
         "markers": round(100 * len(MARKER_RE.findall(out)) / max(w, 1), 1),
+        "dash": round(100 * out.count("—") / max(w, 1), 2),  # длинных тире на 100 слов
+        "hyphen_dash": round(100 * len(re.findall(r"(?<=\s)-(?=\s)", out)) / max(w, 1), 2),  # дефис вместо тире
         "len": round(w / max(words(inp["text"]), 1), 2),
         "sim": round(difflib.SequenceMatcher(None, norm(inp["text"]), n_out).ratio(), 2),
     }
@@ -82,7 +84,8 @@ def main():
     rows = []
     for inp in inputs:
         r = {"id": inp["id"], "register": inp["register"], "control": inp["control"],
-             "markers_in": round(100 * len(MARKER_RE.findall(inp["text"])) / max(words(inp["text"]), 1), 1)}
+             "markers_in": round(100 * len(MARKER_RE.findall(inp["text"])) / max(words(inp["text"]), 1), 1),
+             "dash_in": round(100 * inp["text"].count("—") / max(words(inp["text"]), 1), 2)}
         for c in CONDS:
             r[c] = score_one(inp, c)
         rows.append(r)
@@ -105,13 +108,15 @@ def main():
         print(f"| {r['id']} | {r['register']} | {r['markers_in']} → {m} | {a} | {l} | {sim} |")
 
     avg = lambda rs, key, c: sum(r[c][key] for r in rs) / max(len(rs), 1)
-    print("\n| Условие | n | Маркеров/100 слов (AI-входы; во входе) | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |")
-    print("|---|---|---|---|---|---|---|")
+    print("\n| Условие | n | Маркеров/100 слов (AI-входы; во входе) | Длинных тире/100 слов (во входе) | Дефис вместо тире/100 слов | Якоря сохранены | Длина к исходнику | Контроль: sim | Контроль: якоря |")
+    print("|---|---|---|---|---|---|---|---|---|")
     for c in CONDS:  # усреднение по входам, где это условие есть: покрытие у условий разное
         have = [r for r in rows if r.get(c)]
         ai = [r for r in have if not r["control"]]
         ctrl = [r for r in have if r["control"]]
-        print(f"| {c} | {len(have)} | {avg(ai,'markers',c):.1f} (во входе {sum(r['markers_in'] for r in ai)/max(len(ai),1):.1f}) | {100*avg(ai,'anchors_frac',c):.0f}% | {avg(ai,'len',c):.2f} | {avg(ctrl,'sim',c):.2f} | {100*avg(ctrl,'anchors_frac',c):.0f}% |")
+        print(f"| {c} | {len(have)} | {avg(ai,'markers',c):.1f} (во входе {sum(r['markers_in'] for r in ai)/max(len(ai),1):.1f}) "
+              f"| {avg(ai,'dash',c):.2f} (во входе {sum(r['dash_in'] for r in ai)/max(len(ai),1):.2f}) | {avg(ai,'hyphen_dash',c):.2f} "
+              f"| {100*avg(ai,'anchors_frac',c):.0f}% | {avg(ai,'len',c):.2f} | {avg(ctrl,'sim',c):.2f} | {100*avg(ctrl,'anchors_frac',c):.0f}% |")
     lost = [(r["id"], c, r[c]["lost"]) for r in rows for c in CONDS if r.get(c) and r[c]["lost"]]
     if lost:
         print("\nПотерянные якоря:")
