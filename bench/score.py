@@ -59,6 +59,12 @@ def strip_output(s: str) -> str:
     return s.strip()
 
 
+def hyphen_dash(s: str) -> int:
+    """Дефис в роли тире. Ведущий маркер списка («- пункт») не считается."""
+    return sum(len(re.findall(r"(?<=\s)-(?=\s)", re.sub(r"^\s*[-*+]\s", "", line)))
+               for line in s.splitlines())
+
+
 def score_one(inp: dict, cond: str):
     p = RESULTS / f"{inp['id']}.{cond}.md"
     if not p.exists():
@@ -73,7 +79,7 @@ def score_one(inp: dict, cond: str):
         "lost": [a for a in inp["anchors"] if a not in kept],
         "markers": round(100 * len(MARKER_RE.findall(out)) / max(w, 1), 1),
         "dash": round(100 * out.count("—") / max(w, 1), 2),  # длинных тире на 100 слов
-        "hyphen_dash": round(100 * len(re.findall(r"(?<=\s)-(?=\s)", out)) / max(w, 1), 2),  # дефис вместо тире
+        "hyphen_dash": round(100 * hyphen_dash(out) / max(w, 1), 2),  # дефис вместо тире (маркеры списков не в счёт)
         "len": round(w / max(words(inp["text"]), 1), 2),
         "sim": round(difflib.SequenceMatcher(None, norm(inp["text"]), n_out).ratio(), 2),
     }
