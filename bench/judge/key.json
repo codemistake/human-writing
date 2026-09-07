@@ -8,8 +8,8 @@
   "B": "baseline"
  },
  "03-readme": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "04-support": {
   "A": "baseline",
@@ -24,36 +24,36 @@
   "B": "baseline"
  },
  "07-release-notes": {
-  "A": "skill",
-  "B": "baseline"
- },
- "08-business-email": {
   "A": "baseline",
   "B": "skill"
+ },
+ "08-business-email": {
+  "A": "skill",
+  "B": "baseline"
  },
  "09-job-posting": {
   "A": "baseline",
   "B": "skill"
  },
  "10-onboarding": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "11-chat-answer": {
   "A": "baseline",
   "B": "skill"
  },
  "12-install-docs": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "13-landing": {
   "A": "skill",
   "B": "baseline"
  },
  "14-quarterly-report": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "15-jira-task": {
   "A": "baseline",
@@ -72,16 +72,16 @@
   "B": "skill"
  },
  "19-ctrl-tech-answer": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "20-ctrl-legal": {
   "A": "skill",
   "B": "baseline"
  },
  "21-subtle-blog": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "22-subtle-product-email": {
   "A": "skill",
@@ -92,20 +92,20 @@
   "B": "skill"
  },
  "24-subtle-linkedin": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "25-subtle-onboarding-doc": {
-  "A": "baseline",
-  "B": "skill"
- },
- "26-subtle-tool-review": {
   "A": "skill",
   "B": "baseline"
  },
- "27-subtle-faq": {
+ "26-subtle-tool-review": {
   "A": "baseline",
   "B": "skill"
+ },
+ "27-subtle-faq": {
+  "A": "skill",
+  "B": "baseline"
  },
  "28-subtle-retro": {
   "A": "baseline",
@@ -120,8 +120,8 @@
   "B": "skill"
  },
  "31-long-postmortem": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "32-long-docs-page": {
   "A": "baseline",
@@ -132,32 +132,32 @@
   "B": "skill"
  },
  "34-long-board-report": {
-  "A": "baseline",
-  "B": "skill"
- },
- "35-long-rfc": {
   "A": "skill",
   "B": "baseline"
+ },
+ "35-long-rfc": {
+  "A": "baseline",
+  "B": "skill"
  },
  "36-long-customer-guide": {
   "A": "baseline",
   "B": "skill"
  },
  "37-long-policy": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "38-long-status-update": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "39-gen-chat-tcp": {
   "A": "skill",
   "B": "baseline"
  },
  "40-gen-release-notes": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "41-gen-slack-announce": {
   "A": "skill",
@@ -168,8 +168,8 @@
   "B": "baseline"
  },
  "43-gen-readme-intro": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "44-gen-chat-debug": {
   "A": "baseline",
@@ -184,12 +184,12 @@
   "B": "baseline"
  },
  "47-voice-terse-dev": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "48-voice-formal-manager": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "49-voice-ironic-blogger": {
   "A": "baseline",
@@ -200,40 +200,40 @@
   "B": "skill"
  },
  "51-aud-cto": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "52-aud-nontech-client": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "53-aud-tg-devs": {
-  "A": "skill",
-  "B": "baseline"
- },
- "54-aud-lawyer": {
-  "A": "skill",
-  "B": "baseline"
- },
- "55-aud-junior": {
-  "A": "skill",
-  "B": "baseline"
- },
- "56-aud-allhands": {
-  "A": "skill",
-  "B": "baseline"
- },
- "57-aud-oss": {
   "A": "baseline",
   "B": "skill"
+ },
+ "54-aud-lawyer": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "55-aud-junior": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "56-aud-allhands": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "57-aud-oss": {
+  "A": "skill",
+  "B": "baseline"
  },
  "58-aud-elderly": {
   "A": "skill",
   "B": "baseline"
  },
  "59-aud-board": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "60-aud-warehouse": {
   "A": "baseline",
