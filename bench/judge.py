@@ -71,7 +71,7 @@ def report():
         f = lambda d: f"{len(d['baseline'])} / {len(d['skill'])}"
         print(f"| {i} | {reg} ({kind}) | {w} | {f(lost)} | {f(inv)} | {why} |")
     n = len(rows)
-    order = ["rewrite", "subtle", "long", "generate", "voice", "control"]
+    order = ["rewrite", "subtle", "long", "generate", "voice", "audience", "control"]
     kinds = sorted({r[6] for r in rows}, key=order.index)
     if len(kinds) > 1:
         print(f"\n| Тип входов | n | {COND} / baseline / ничья | Потеряно (baseline / {COND}) | Выдумано (baseline / {COND}) |")
