@@ -1,27 +1,27 @@
 {
  "01-newsletter": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "02-postmortem": {
   "A": "skill",
   "B": "baseline"
  },
  "03-readme": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "04-support": {
   "A": "baseline",
   "B": "skill"
  },
  "05-post": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "06-abstract": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "07-release-notes": {
   "A": "baseline",
@@ -32,20 +32,20 @@
   "B": "baseline"
  },
  "09-job-posting": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "10-onboarding": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "11-chat-answer": {
   "A": "baseline",
   "B": "skill"
  },
  "12-install-docs": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "13-landing": {
   "A": "skill",
@@ -68,8 +68,8 @@
   "B": "baseline"
  },
  "18-ctrl-slack": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "19-ctrl-tech-answer": {
   "A": "skill",
@@ -84,8 +84,8 @@
   "B": "skill"
  },
  "22-subtle-product-email": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "23-subtle-tech-explainer": {
   "A": "baseline",
@@ -96,76 +96,76 @@
   "B": "skill"
  },
  "25-subtle-onboarding-doc": {
-  "A": "skill",
-  "B": "baseline"
- },
- "26-subtle-tool-review": {
   "A": "baseline",
   "B": "skill"
  },
- "27-subtle-faq": {
+ "26-subtle-tool-review": {
   "A": "skill",
   "B": "baseline"
+ },
+ "27-subtle-faq": {
+  "A": "baseline",
+  "B": "skill"
  },
  "28-subtle-retro": {
   "A": "baseline",
   "B": "skill"
  },
  "29-subtle-adr": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "30-subtle-newsletter-intro": {
   "A": "skill",
   "B": "baseline"
  },
- "30-subtle-newsletter-intro": {
-  "A": "baseline",
-  "B": "skill"
- },
  "31-long-postmortem": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "32-long-docs-page": {
   "A": "baseline",
   "B": "skill"
  },
  "33-long-blog-migration": {
-  "A": "baseline",
-  "B": "skill"
- },
- "34-long-board-report": {
   "A": "skill",
   "B": "baseline"
  },
- "35-long-rfc": {
+ "34-long-board-report": {
   "A": "baseline",
   "B": "skill"
  },
+ "35-long-rfc": {
+  "A": "skill",
+  "B": "baseline"
+ },
  "36-long-customer-guide": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "37-long-policy": {
   "A": "baseline",
   "B": "skill"
  },
  "38-long-status-update": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "39-gen-chat-tcp": {
-  "A": "skill",
-  "B": "baseline"
- },
- "40-gen-release-notes": {
   "A": "baseline",
   "B": "skill"
  },
- "41-gen-slack-announce": {
+ "40-gen-release-notes": {
   "A": "skill",
   "B": "baseline"
  },
+ "41-gen-slack-announce": {
+  "A": "baseline",
+  "B": "skill"
+ },
  "42-gen-support-reply": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "43-gen-readme-intro": {
   "A": "baseline",
@@ -176,20 +176,20 @@
   "B": "skill"
  },
  "45-gen-job-posting": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "46-gen-pr-description": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "47-voice-terse-dev": {
   "A": "skill",
   "B": "baseline"
  },
  "48-voice-formal-manager": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "49-voice-ironic-blogger": {
   "A": "baseline",
@@ -200,40 +200,40 @@
   "B": "skill"
  },
  "51-aud-cto": {
-  "A": "skill",
-  "B": "baseline"
- },
- "52-aud-nontech-client": {
-  "A": "skill",
-  "B": "baseline"
- },
- "53-aud-tg-devs": {
   "A": "baseline",
   "B": "skill"
+ },
+ "52-aud-nontech-client": {
+  "A": "baseline",
+  "B": "skill"
+ },
+ "53-aud-tg-devs": {
+  "A": "skill",
+  "B": "baseline"
  },
  "54-aud-lawyer": {
   "A": "baseline",
   "B": "skill"
  },
  "55-aud-junior": {
-  "A": "baseline",
-  "B": "skill"
+  "A": "skill",
+  "B": "baseline"
  },
  "56-aud-allhands": {
   "A": "baseline",
   "B": "skill"
  },
  "57-aud-oss": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "58-aud-elderly": {
   "A": "skill",
   "B": "baseline"
  },
  "59-aud-board": {
-  "A": "skill",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "skill"
  },
  "60-aud-warehouse": {
   "A": "baseline",
