@@ -224,14 +224,14 @@ npx skills add codemistake/human-writing --global
 
 Тем же протоколом на тех же 50 входах прогнаны пять русских humanizer-скиллов с GitHub, каждый против baseline вслепую:
 
-| Скилл, 50 входов | ★ | Токенов: описание всегда / тело при вызове | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Итог |
-|---|---|---|---|---|---|---|
-| **human-writing v1.2.0** | — | **140 / 5 700** | **26 / 16 / 8** | 17 (12 — риторика) | **1** | помогает, почти не выдумывает |
-| Vladimir-Human/humanizer-ru | 123 | 290 / 6 200 | 20 / 24 / 6 | 21 | 10 | мешает, теряет факты |
-| comol/Humanizer_RU | 15 | 150 / 4 400 | 20 / 23 / 7 | 12 | **1** | мешает, но честен |
-| ilyautov/humanizer-ru | 287 | 240 / 13 000 | 16 / 28 / 6 | 17 | 21 | мешает, выдумывает |
-| thevseprod/humanizer-ru | 37 | 85 / 4 400 | 13 / 33 / 4 | 12 | 21 | мешает, выдумывает |
-| smixs/humanizer-ru | 149 | 340 / 6 500 | 12 / 31 / 7 | 19 | 18 | мешает, теряет и выдумывает |
+| Скилл, 50 входов | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Токенов: описание всегда / тело при вызове |
+|---|---|---|---|---|
+| [**human-writing v1.2.0**](https://github.com/codemistake/human-writing) ![★](https://img.shields.io/github/stars/codemistake/human-writing?style=flat-square&label=%E2%98%85&color=555) | **26 / 16 / 8** | 17 (12 — риторика) | **1** | **140 / 5 700** |
+| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) ![★](https://img.shields.io/github/stars/Vladimir-Human/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 20 / 24 / 6 | 21 | 10 | 290 / 6 200 |
+| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) ![★](https://img.shields.io/github/stars/comol/Humanizer_RU?style=flat-square&label=%E2%98%85&color=555) | 20 / 23 / 7 | 12 | **1** | 150 / 4 400 |
+| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) ![★](https://img.shields.io/github/stars/ilyautov/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 16 / 28 / 6 | 17 | **21** | 240 / 13 000 |
+| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) ![★](https://img.shields.io/github/stars/thevseprod/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 13 / 33 / 4 | 12 | **21** | 85 / 4 400 |
+| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) ![★](https://img.shields.io/github/stars/smixs/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 12 / 31 / 7 | 19 | 18 | 340 / 6 500 |
 
 Пока скилл просто установлен, он стоит только своего описания: у нашего это около 140 токенов на каждый запрос. Тело грузится при срабатывании и живёт в контексте до конца сессии. Оценка по токенизатору `o200k_base` с поправкой на Claude, подробности — в [bench/](./bench/).
 

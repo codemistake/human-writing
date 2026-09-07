@@ -79,18 +79,20 @@ BENCH_COND=<условие> python bench/judge.py report      # после за�
 
 ### Sonnet, 50 входов
 
-| Скилл | ★ | Токенов: описание всегда / тело при вызове (хорошо: меньше) | Побед / поражений / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Итог |
-|---|---|---|---|---|---|---|
-| **human-writing v1.2.0** (этот репозиторий) | — | 140 / 5 700 | **26 / 16 / 8** | 17 (12 из них — риторика, не факты) | **1** | помогает, почти не выдумывает |
-| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) | 123 | 290 / 6 200 | 20 / 24 / 6 | 21 | 10 | мешает, теряет факты |
-| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) | 15 | 150 / 4 400 | 20 / 23 / 7 | 12 | **1** | мешает, но честен |
-| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) | 287 | 240 / 13 000 | 16 / 28 / 6 | 17 | **21** | мешает, выдумывает |
-| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) | 37 | 85 / 4 400 | 13 / 33 / 4 | 12 | **21** | мешает, выдумывает |
-| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) | 149 | 340 / 6 500 | 12 / 31 / 7 | 19 | 18 | мешает, теряет и выдумывает |
+| Скилл | Побед / поражений / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Токенов: описание всегда / тело при вызове (хорошо: меньше) |
+|---|---|---|---|---|
+| [**human-writing v1.2.0**](https://github.com/codemistake/human-writing) ![★](https://img.shields.io/github/stars/codemistake/human-writing?style=flat-square&label=%E2%98%85&color=555) | **26 / 16 / 8** | 17 (12 из них — риторика, не факты) | **1** | 140 / 5 700 |
+| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) ![★](https://img.shields.io/github/stars/Vladimir-Human/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 20 / 24 / 6 | 21 | 10 | 290 / 6 200 |
+| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) ![★](https://img.shields.io/github/stars/comol/Humanizer_RU?style=flat-square&label=%E2%98%85&color=555) | 20 / 23 / 7 | 12 | **1** | 150 / 4 400 |
+| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) ![★](https://img.shields.io/github/stars/ilyautov/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 16 / 28 / 6 | 17 | **21** | 240 / 13 000 |
+| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) ![★](https://img.shields.io/github/stars/thevseprod/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 13 / 33 / 4 | 12 | **21** | 85 / 4 400 |
+| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) ![★](https://img.shields.io/github/stars/smixs/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 12 / 31 / 7 | 19 | 18 | 340 / 6 500 |
 
 Ни один не обыграл базовую модель на полном наборе. По типам входов картина у всех похожая: выигрыши приходятся на `subtle`, где вычистить LLM-паттерны полезно (ilyautov 8:2, thevseprod 7:3, comol и Vladimir-Human 5:5 и 5:4), а проигрыши — на `rewrite` и `generate`, где нужно не «оживлять», а точно передать содержание (thevseprod 2:14 и 1:7, comol 4:11, ilyautov 2:14 и 0:7).
 
 Подробные вердикты: [judge-ilyautov/report.md](./judge-ilyautov/report.md), [judge-smixs/report.md](./judge-smixs/report.md), [judge-vladimir-human/report.md](./judge-vladimir-human/report.md), [judge-thevseprod/report.md](./judge-thevseprod/report.md), [judge-comol/report.md](./judge-comol/report.md). Архив прогона на первых 20 входах — [judge-n20/](./judge-n20/).
+
+Коротко про каждого: Vladimir-Human и comol держатся ближе всех к baseline, но первый теряет 21 факт, а второй просто вмешивается реже, чем нужно; ilyautov и thevseprod выдумывают по 21 детали; smixs теряет и выдумывает одновременно.
 
 **Цена в контексте не покупает качество.** Самый тяжёлый свод правил — ilyautov, около 13 тысяч токенов при вызове, втрое больше нашего — показывает худший результат по выдумкам. Самый лёгкий, thevseprod, тоже проигрывает. Размер инструкции ни с чем в этой таблице не коррелирует.
 
