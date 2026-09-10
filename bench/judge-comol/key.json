@@ -4,8 +4,8 @@
   "B": "comol"
  },
  "02-postmortem": {
-  "A": "baseline",
-  "B": "comol"
+  "A": "comol",
+  "B": "baseline"
  },
  "03-readme": {
   "A": "comol",
@@ -20,16 +20,16 @@
   "B": "comol"
  },
  "06-abstract": {
-  "A": "comol",
-  "B": "baseline"
- },
- "07-release-notes": {
-  "A": "comol",
-  "B": "baseline"
- },
- "08-business-email": {
   "A": "baseline",
   "B": "comol"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "08-business-email": {
+  "A": "comol",
+  "B": "baseline"
  },
  "09-job-posting": {
   "A": "comol",
@@ -40,20 +40,20 @@
   "B": "baseline"
  },
  "11-chat-answer": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "12-install-docs": {
   "A": "baseline",
   "B": "comol"
  },
  "13-landing": {
-  "A": "baseline",
-  "B": "comol"
+  "A": "comol",
+  "B": "baseline"
  },
  "14-quarterly-report": {
-  "A": "baseline",
-  "B": "comol"
+  "A": "comol",
+  "B": "baseline"
  },
  "15-jira-task": {
   "A": "baseline",
@@ -68,44 +68,44 @@
   "B": "baseline"
  },
  "18-ctrl-slack": {
-  "A": "baseline",
-  "B": "comol"
+  "A": "comol",
+  "B": "baseline"
  },
  "19-ctrl-tech-answer": {
-  "A": "baseline",
-  "B": "comol"
+  "A": "comol",
+  "B": "baseline"
  },
  "20-ctrl-legal": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "21-subtle-blog": {
   "A": "baseline",
   "B": "comol"
  },
- "21-subtle-blog": {
-  "A": "comol",
-  "B": "baseline"
- },
  "22-subtle-product-email": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "23-subtle-tech-explainer": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "24-subtle-linkedin": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "25-subtle-onboarding-doc": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "26-subtle-tool-review": {
   "A": "comol",
   "B": "baseline"
  },
  "27-subtle-faq": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "28-subtle-retro": {
   "A": "baseline",
@@ -132,8 +132,8 @@
   "B": "baseline"
  },
  "34-long-board-report": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "35-long-rfc": {
   "A": "comol",
@@ -144,44 +144,44 @@
   "B": "baseline"
  },
  "37-long-policy": {
-  "A": "comol",
-  "B": "baseline"
- },
- "38-long-status-update": {
   "A": "baseline",
   "B": "comol"
+ },
+ "38-long-status-update": {
+  "A": "comol",
+  "B": "baseline"
  },
  "39-gen-chat-tcp": {
   "A": "baseline",
   "B": "comol"
  },
  "40-gen-release-notes": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "41-gen-slack-announce": {
   "A": "baseline",
   "B": "comol"
  },
- "41-gen-slack-announce": {
-  "A": "comol",
-  "B": "baseline"
- },
  "42-gen-support-reply": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "43-gen-readme-intro": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "44-gen-chat-debug": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "45-gen-job-posting": {
   "A": "baseline",
   "B": "comol"
  },
  "46-gen-pr-description": {
-  "A": "comol",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "comol"
  },
  "47-voice-terse-dev": {
   "A": "comol",
@@ -196,7 +196,47 @@
   "B": "comol"
  },
  "50-voice-docs-writer": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "51-aud-cto": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "52-aud-nontech-client": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "53-aud-tg-devs": {
   "A": "comol",
   "B": "baseline"
+ },
+ "54-aud-lawyer": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "55-aud-junior": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "56-aud-allhands": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "57-aud-oss": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "58-aud-elderly": {
+  "A": "comol",
+  "B": "baseline"
+ },
+ "59-aud-board": {
+  "A": "baseline",
+  "B": "comol"
+ },
+ "60-aud-warehouse": {
+  "A": "baseline",
+  "B": "comol"
  }
 }

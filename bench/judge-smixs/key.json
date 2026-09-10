@@ -4,28 +4,28 @@
   "B": "smixs"
  },
  "02-postmortem": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "03-readme": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "04-support": {
   "A": "baseline",
   "B": "smixs"
  },
  "05-post": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "06-abstract": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "07-release-notes": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "08-business-email": {
   "A": "smixs",
@@ -36,56 +36,56 @@
   "B": "baseline"
  },
  "10-onboarding": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "11-chat-answer": {
   "A": "baseline",
   "B": "smixs"
  },
  "12-install-docs": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "13-landing": {
   "A": "smixs",
   "B": "baseline"
  },
  "14-quarterly-report": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "15-jira-task": {
   "A": "baseline",
   "B": "smixs"
  },
  "16-status-page": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "17-cover-letter": {
   "A": "smixs",
   "B": "baseline"
  },
  "18-ctrl-slack": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "19-ctrl-tech-answer": {
   "A": "smixs",
   "B": "baseline"
  },
  "20-ctrl-legal": {
-  "A": "baseline",
-  "B": "smixs"
+  "A": "smixs",
+  "B": "baseline"
  },
  "21-subtle-blog": {
   "A": "baseline",
   "B": "smixs"
  },
  "22-subtle-product-email": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "23-subtle-tech-explainer": {
   "A": "baseline",
@@ -96,8 +96,8 @@
   "B": "smixs"
  },
  "25-subtle-onboarding-doc": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "26-subtle-tool-review": {
   "A": "smixs",
@@ -112,28 +112,28 @@
   "B": "smixs"
  },
  "29-subtle-adr": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "30-subtle-newsletter-intro": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "31-long-postmortem": {
-  "A": "baseline",
-  "B": "smixs"
- },
- "32-long-docs-page": {
   "A": "smixs",
   "B": "baseline"
+ },
+ "31-long-postmortem": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "32-long-docs-page": {
+  "A": "baseline",
+  "B": "smixs"
  },
  "33-long-blog-migration": {
   "A": "smixs",
   "B": "baseline"
  },
  "34-long-board-report": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "35-long-rfc": {
   "A": "smixs",
@@ -144,40 +144,40 @@
   "B": "baseline"
  },
  "37-long-policy": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "38-long-status-update": {
   "A": "smixs",
   "B": "baseline"
  },
  "39-gen-chat-tcp": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "40-gen-release-notes": {
   "A": "smixs",
   "B": "baseline"
  },
  "41-gen-slack-announce": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "42-gen-support-reply": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "43-gen-readme-intro": {
   "A": "baseline",
   "B": "smixs"
  },
  "44-gen-chat-debug": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "45-gen-job-posting": {
-  "A": "smixs",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "smixs"
  },
  "46-gen-pr-description": {
   "A": "baseline",
@@ -196,7 +196,47 @@
   "B": "smixs"
  },
  "50-voice-docs-writer": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "51-aud-cto": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "52-aud-nontech-client": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "53-aud-tg-devs": {
   "A": "smixs",
   "B": "baseline"
+ },
+ "54-aud-lawyer": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "55-aud-junior": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "56-aud-allhands": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "57-aud-oss": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "58-aud-elderly": {
+  "A": "smixs",
+  "B": "baseline"
+ },
+ "59-aud-board": {
+  "A": "baseline",
+  "B": "smixs"
+ },
+ "60-aud-warehouse": {
+  "A": "baseline",
+  "B": "smixs"
  }
 }

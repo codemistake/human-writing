@@ -4,8 +4,8 @@
   "B": "thevseprod"
  },
  "02-postmortem": {
-  "A": "baseline",
-  "B": "thevseprod"
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "03-readme": {
   "A": "thevseprod",
@@ -20,16 +20,16 @@
   "B": "thevseprod"
  },
  "06-abstract": {
-  "A": "thevseprod",
-  "B": "baseline"
- },
- "07-release-notes": {
-  "A": "thevseprod",
-  "B": "baseline"
- },
- "08-business-email": {
   "A": "baseline",
   "B": "thevseprod"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "08-business-email": {
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "09-job-posting": {
   "A": "thevseprod",
@@ -40,20 +40,20 @@
   "B": "baseline"
  },
  "11-chat-answer": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "12-install-docs": {
   "A": "baseline",
   "B": "thevseprod"
  },
  "13-landing": {
-  "A": "baseline",
-  "B": "thevseprod"
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "14-quarterly-report": {
-  "A": "baseline",
-  "B": "thevseprod"
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "15-jira-task": {
   "A": "baseline",
@@ -68,44 +68,44 @@
   "B": "baseline"
  },
  "18-ctrl-slack": {
-  "A": "baseline",
-  "B": "thevseprod"
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "19-ctrl-tech-answer": {
-  "A": "baseline",
-  "B": "thevseprod"
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "20-ctrl-legal": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "21-subtle-blog": {
   "A": "baseline",
   "B": "thevseprod"
  },
- "21-subtle-blog": {
-  "A": "thevseprod",
-  "B": "baseline"
- },
  "22-subtle-product-email": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "23-subtle-tech-explainer": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "24-subtle-linkedin": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "25-subtle-onboarding-doc": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "26-subtle-tool-review": {
   "A": "thevseprod",
   "B": "baseline"
  },
  "27-subtle-faq": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "28-subtle-retro": {
   "A": "baseline",
@@ -132,8 +132,8 @@
   "B": "baseline"
  },
  "34-long-board-report": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "35-long-rfc": {
   "A": "thevseprod",
@@ -144,44 +144,44 @@
   "B": "baseline"
  },
  "37-long-policy": {
-  "A": "thevseprod",
-  "B": "baseline"
- },
- "38-long-status-update": {
   "A": "baseline",
   "B": "thevseprod"
+ },
+ "38-long-status-update": {
+  "A": "thevseprod",
+  "B": "baseline"
  },
  "39-gen-chat-tcp": {
   "A": "baseline",
   "B": "thevseprod"
  },
  "40-gen-release-notes": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "41-gen-slack-announce": {
   "A": "baseline",
   "B": "thevseprod"
  },
- "41-gen-slack-announce": {
-  "A": "thevseprod",
-  "B": "baseline"
- },
  "42-gen-support-reply": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "43-gen-readme-intro": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "44-gen-chat-debug": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "45-gen-job-posting": {
   "A": "baseline",
   "B": "thevseprod"
  },
  "46-gen-pr-description": {
-  "A": "thevseprod",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "thevseprod"
  },
  "47-voice-terse-dev": {
   "A": "thevseprod",
@@ -196,7 +196,47 @@
   "B": "thevseprod"
  },
  "50-voice-docs-writer": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "51-aud-cto": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "52-aud-nontech-client": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "53-aud-tg-devs": {
   "A": "thevseprod",
   "B": "baseline"
+ },
+ "54-aud-lawyer": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "55-aud-junior": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "56-aud-allhands": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "57-aud-oss": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "58-aud-elderly": {
+  "A": "thevseprod",
+  "B": "baseline"
+ },
+ "59-aud-board": {
+  "A": "baseline",
+  "B": "thevseprod"
+ },
+ "60-aud-warehouse": {
+  "A": "baseline",
+  "B": "thevseprod"
  }
 }

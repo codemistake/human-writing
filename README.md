@@ -226,23 +226,23 @@ npx skills add codemistake/human-writing --global
 
 **Счёт побед на Sonnet 5 шумит сильнее, чем разница между версиями скилла.** На исходных 50 входах пять прогонов дали скиллу 21–24 победы при 16–24 у baseline: разброс перекрывает любую разницу между близкими версиями правил. Поэтому сравнивать версии по счёту нельзя, и опорные числа здесь — фактические, а не победные. Результат зависит и от модели: каждая таблица подписана той, что писала тексты.
 
-Тем же протоколом на тех же 50 входах прогнаны пять русских humanizer-скиллов с GitHub, каждый против baseline вслепую. Конкуренты проверены только на Sonnet 5:
+Тем же протоколом на тех же 60 входах прогнаны пять русских humanizer-скиллов с GitHub, каждый против baseline вслепую. Все шесть строк ниже — один прогон 10 сентября 2026 года на Claude Sonnet 5, с одними и теми же baseline-текстами:
 
-| Скилл, 50 входов, Claude Sonnet 5 | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Токенов: описание всегда / тело при вызове |
+| Скилл, 60 входов, Claude Sonnet 5 | Побед скилла / побед baseline / ничьих (хорошо: первое число больше) | Фактов потеряно (хорошо: 0) | Фактов выдумано (хорошо: 0) | Токенов: описание всегда / тело при вызове |
 |---|---|---|---|---|
-| **Без скилла** — Claude Sonnet 5 как есть | точка отсчёта | 22 в среднем (12–28) | 13 в среднем (6–17) | 0 / 0 |
-| [**human-writing v1.3.1**](https://github.com/codemistake/human-writing) ![★](https://img.shields.io/github/stars/codemistake/human-writing?style=flat-square&label=%E2%98%85&color=555) | **22 / 24 / 4** | **17** | **10** | **140 / 5 700** |
-| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) ![★](https://img.shields.io/github/stars/Vladimir-Human/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 20 / 24 / 6 | 21 | 10 | 290 / 6 200 |
-| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) ![★](https://img.shields.io/github/stars/comol/Humanizer_RU?style=flat-square&label=%E2%98%85&color=555) | 20 / 23 / 7 | 12 (из них 5 искажений) | **1** | 150 / 4 400 |
-| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) ![★](https://img.shields.io/github/stars/ilyautov/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 16 / 28 / 6 | 17 | **21** | 240 / 13 000 |
-| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) ![★](https://img.shields.io/github/stars/thevseprod/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 13 / 33 / 4 | 12 | **21** | 85 / 4 400 |
-| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) ![★](https://img.shields.io/github/stars/smixs/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 12 / 31 / 7 | 19 | 18 | 340 / 6 500 |
+| **Без скилла** — Claude Sonnet 5 как есть | точка отсчёта | 21 в среднем (17–31) | 19 в среднем (16–26) | 0 / 0 |
+| [**human-writing v1.3.1**](https://github.com/codemistake/human-writing) ![★](https://img.shields.io/github/stars/codemistake/human-writing?style=flat-square&label=%E2%98%85&color=555) | **30 / 26 / 4** | 17 | 14 | **140 / 5 700** |
+| [Vladimir-Human/humanizer-ru](https://github.com/Vladimir-Human/humanizer-ru) ![★](https://img.shields.io/github/stars/Vladimir-Human/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 28 / 27 / 5 | 32 | 14 | 290 / 6 200 |
+| [comol/Humanizer_RU](https://github.com/comol/Humanizer_RU) ![★](https://img.shields.io/github/stars/comol/Humanizer_RU?style=flat-square&label=%E2%98%85&color=555) | 24 / 31 / 5 | **9** | **12** | 150 / 4 400 |
+| [thevseprod/humanizer-ru](https://github.com/thevseprod/humanizer-ru) ![★](https://img.shields.io/github/stars/thevseprod/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 24 / 31 / 5 | 16 | 19 | 85 / 4 400 |
+| [ilyautov/humanizer-ru](https://github.com/ilyautov/humanizer-ru) ![★](https://img.shields.io/github/stars/ilyautov/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 22 / 34 / 4 | 13 | **33** | 240 / 13 000 |
+| [smixs/humanizer-ru](https://github.com/smixs/humanizer-ru) ![★](https://img.shields.io/github/stars/smixs/humanizer-ru?style=flat-square&label=%E2%98%85&color=555) | 22 / 34 / 4 | 18 | 29 | 340 / 6 500 |
 
-Первая строка — базовая модель без правил, то есть то, что получает пользователь без всякого humanizer. Счёта побед у неё нет, она точка отсчёта, но факты она теряет: 18 на 50 текстов в среднем, разброс 12–26 по шести прогонам одного и того же набора разными судьями.
+Первая строка — базовая модель без правил, то есть то, что получает пользователь без всякого humanizer. Счёта побед у неё нет, она точка отсчёта, но факты она теряет: 17–31 на 60 текстов в шести прогонах этой таблицы. Тексты baseline во всех шести — одни и те же файлы, менялся только состав судей, так что этот разброс и есть мера шума счётчика фактов.
 
 Пока скилл просто установлен, он стоит только своего описания: у нашего это около 140 токенов на каждый запрос. Тело грузится при срабатывании и живёт в контексте до конца сессии. Оценка по токенизатору `o200k_base` с поправкой на Claude, подробности — в [bench/](./bench/).
 
-Ни один не обыграл базовую модель. Наша строка здесь — те же 50 входов из прогона v1.3.1, без десяти входов с названным адресатом, которых у конкурентов нет; на полном наборе из 60 счёт 30 / 26 / 4. Ближе всех comol, но он и вмешивается меньше всех: почти не трогает текст, поэтому теряет мало и выигрывает редко. У остальных другая цель: большинство оптимизируют текст под AI-детекторы, а правила «добавь мнение, сломай ритм, оживи» стоят фактов. Бенчмарк написан автором одного из участников, поэтому входы, тексты и вердикты опубликованы целиком.
+Базовую модель обыграл один скилл из шести — наш. Ближе всех Vladimir-Human, но он теряет вдвое больше фактов. comol аккуратнее всех с фактами, потому что почти не трогает текст: теряет мало и выигрывает редко. У остальных другая цель: большинство оптимизируют текст под AI-детекторы, а правила «добавь мнение, сломай ритм, оживи» стоят фактов — ilyautov и smixs выдумали 33 и 29 утверждений на 60 текстов. Бенчмарк написан автором одного из участников, поэтому входы, тексты и вердикты опубликованы целиком.
 
 Метод, входы, все тексты, вердикты судьи с комментариями и разбивка по типам — в [bench/](./bench/).
 

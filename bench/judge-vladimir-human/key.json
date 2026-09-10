@@ -4,8 +4,8 @@
   "B": "vladimir-human"
  },
  "02-postmortem": {
-  "A": "baseline",
-  "B": "vladimir-human"
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "03-readme": {
   "A": "vladimir-human",
@@ -20,16 +20,16 @@
   "B": "vladimir-human"
  },
  "06-abstract": {
-  "A": "vladimir-human",
-  "B": "baseline"
- },
- "07-release-notes": {
-  "A": "vladimir-human",
-  "B": "baseline"
- },
- "08-business-email": {
   "A": "baseline",
   "B": "vladimir-human"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "08-business-email": {
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "09-job-posting": {
   "A": "vladimir-human",
@@ -40,20 +40,20 @@
   "B": "baseline"
  },
  "11-chat-answer": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "12-install-docs": {
   "A": "baseline",
   "B": "vladimir-human"
  },
  "13-landing": {
-  "A": "baseline",
-  "B": "vladimir-human"
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "14-quarterly-report": {
-  "A": "baseline",
-  "B": "vladimir-human"
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "15-jira-task": {
   "A": "baseline",
@@ -68,44 +68,44 @@
   "B": "baseline"
  },
  "18-ctrl-slack": {
-  "A": "baseline",
-  "B": "vladimir-human"
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "19-ctrl-tech-answer": {
-  "A": "baseline",
-  "B": "vladimir-human"
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "20-ctrl-legal": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "21-subtle-blog": {
   "A": "baseline",
   "B": "vladimir-human"
  },
- "21-subtle-blog": {
-  "A": "vladimir-human",
-  "B": "baseline"
- },
  "22-subtle-product-email": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "23-subtle-tech-explainer": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "24-subtle-linkedin": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "25-subtle-onboarding-doc": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "26-subtle-tool-review": {
   "A": "vladimir-human",
   "B": "baseline"
  },
  "27-subtle-faq": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "28-subtle-retro": {
   "A": "baseline",
@@ -132,8 +132,8 @@
   "B": "baseline"
  },
  "34-long-board-report": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "35-long-rfc": {
   "A": "vladimir-human",
@@ -144,44 +144,44 @@
   "B": "baseline"
  },
  "37-long-policy": {
-  "A": "vladimir-human",
-  "B": "baseline"
- },
- "38-long-status-update": {
   "A": "baseline",
   "B": "vladimir-human"
+ },
+ "38-long-status-update": {
+  "A": "vladimir-human",
+  "B": "baseline"
  },
  "39-gen-chat-tcp": {
   "A": "baseline",
   "B": "vladimir-human"
  },
  "40-gen-release-notes": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "41-gen-slack-announce": {
   "A": "baseline",
   "B": "vladimir-human"
  },
- "41-gen-slack-announce": {
-  "A": "vladimir-human",
-  "B": "baseline"
- },
  "42-gen-support-reply": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "43-gen-readme-intro": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "44-gen-chat-debug": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "45-gen-job-posting": {
   "A": "baseline",
   "B": "vladimir-human"
  },
  "46-gen-pr-description": {
-  "A": "vladimir-human",
-  "B": "baseline"
+  "A": "baseline",
+  "B": "vladimir-human"
  },
  "47-voice-terse-dev": {
   "A": "vladimir-human",
@@ -196,7 +196,47 @@
   "B": "vladimir-human"
  },
  "50-voice-docs-writer": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "51-aud-cto": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "52-aud-nontech-client": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "53-aud-tg-devs": {
   "A": "vladimir-human",
   "B": "baseline"
+ },
+ "54-aud-lawyer": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "55-aud-junior": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "56-aud-allhands": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "57-aud-oss": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "58-aud-elderly": {
+  "A": "vladimir-human",
+  "B": "baseline"
+ },
+ "59-aud-board": {
+  "A": "baseline",
+  "B": "vladimir-human"
+ },
+ "60-aud-warehouse": {
+  "A": "baseline",
+  "B": "vladimir-human"
  }
 }
