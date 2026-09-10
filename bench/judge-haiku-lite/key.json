@@ -1,0 +1,70 @@
+{
+ "01-newsletter": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "02-postmortem": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "03-readme": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "04-support": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "05-post": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "06-abstract": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "07-release-notes": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "08-business-email": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "09-job-posting": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "10-onboarding": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "11-chat-answer": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "12-install-docs": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "13-landing": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "14-quarterly-report": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "15-jira-task": {
+  "A": "baseline",
+  "B": "lite"
+ },
+ "16-status-page": {
+  "A": "lite",
+  "B": "baseline"
+ },
+ "17-cover-letter": {
+  "A": "lite",
+  "B": "baseline"
+ }
+}
